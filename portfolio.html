@@ -27,13 +27,27 @@
         <a href="./index.html" class="logo link"
           >Web<span class="logo--dark">Studio</span></a
         >
+        <div class="burger">
+          <svg class="burger__icon" width="40" height="40">
+            <use
+              class="burger__open"
+              href="./images/StudioProjectSpray.svg#open__burger"
+            ></use>
+            <use
+              class="burger__close"
+              href="./images/StudioProjectSpray.svg#close__burger"
+            ></use>
+          </svg>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a class="navigation__link  link" href="./index.html">Студія</a>
+              <a class="navigation__link link" href="./index.html">Студія</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link current link" href="./portfolio.html">Портфоліо</a>
+              <a class="navigation__link current link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link link" href="">Контакти</a>
@@ -43,23 +57,43 @@
 
         <ul class="contacts list">
           <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
+            <a
+              class="contacts__link contacts__link--mail link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/StudioProjectSpray.svg#envelope"></use>
               </svg>
-              <span>info@devstudio.com</span></a
+              info@devstudio.com</a
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
+            <a
+              class="contacts__link contacts__link--phone link"
+              href="tel:+380961111111"
+            >
               <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/StudioProjectSpray.svg#smartphone"></use>
               </svg>
-              <span>+38 096 111 11 11</span></a
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
+      <!-- <ul class="header-social list">
+            <li class="header-social__item">
+              <a class="header-social__link link" href="">Instagram</a>
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link link" href="">Twitter</a>
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link link" href="">Facebook</a>
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link link" href="">LinkedIn</a>
+            </li>
+          </ul> -->
     </header>
     <!--Головная частина-->
     <main>
@@ -90,10 +124,7 @@
             <li class="examples__item">
               <a class="examples__link link" href=""
                 ><div class="examples-description">
-                  <img
-                    src="./images/techno.jpg"
-                    alt="Технокряк"
-                  />
+                  <img src="./images/techno.jpg" alt="Технокряк" />
                   <div class="examples-description__thumb">
                     <p class="examples-description__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -150,7 +181,9 @@
                   </div>
                 </div>
                 <div class="examples__card">
-                  <h2 class="examples__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="examples__title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
                   <p class="examples__text">Додаток</p>
                 </div>
               </a>
@@ -158,10 +191,7 @@
             <li class="examples__item">
               <a class="examples__link link" href=""
                 ><div class="examples-description">
-                  <img
-                    src="./images/headphones.jpg"
-                    alt="Навушники"
-                  />
+                  <img src="./images/headphones.jpg" alt="Навушники" />
                   <div class="examples-description__thumb">
                     <p class="examples-description__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -180,10 +210,7 @@
             <li class="examples__item">
               <a class="examples__link link" href=""
                 ><div class="examples-description">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Коробки"
-                  />
+                  <img src="./images/boxes.jpg" alt="Коробки" />
                   <div class="examples-description__thumb">
                     <p class="examples-description__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,7 +221,9 @@
                   </div>
                 </div>
                 <div class="examples__card">
-                  <h2 class="examples__title">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="examples__title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
                   <p class="examples__text">Додаток</p>
                 </div>
               </a>
@@ -216,7 +245,9 @@
                   </div>
                 </div>
                 <div class="examples__card">
-                  <h2 class="examples__title" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="examples__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="examples__text">Веб-сайт</p>
                 </div>
               </a>
@@ -238,7 +269,9 @@
                   </div>
                 </div>
                 <div class="examples__card">
-                  <h2 class="examples__title">Видання <span lang="en">Limited Edition</span></h2>
+                  <h2 class="examples__title">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
                   <p class="examples__text">Дизайн</p>
                 </div>
               </a>
@@ -246,10 +279,7 @@
             <li class="examples__item">
               <a class="examples__link link" href=""
                 ><div class="examples-description">
-                  <img
-                    src="./images/label.jpg"
-                    alt="Логоти LAB"
-                  />
+                  <img src="./images/label.jpg" alt="Логоти LAB" />
                   <div class="examples-description__thumb">
                     <p class="examples-description__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -260,7 +290,9 @@
                   </div>
                 </div>
                 <div class="examples__card">
-                  <h2 class="examples__title">Проєкт <span lang="en">LAB</span></h2>
+                  <h2 class="examples__title">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
                   <p class="examples__text">Маркетинг</p>
                 </div>
               </a>
@@ -311,7 +343,9 @@
                 >
               </li>
               <li class="address-footer__item">
-                <a class="address-footer__link link" href="mailto:info@devstudio.com"
+                <a
+                  class="address-footer__link link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -384,9 +418,17 @@
         <!-- Підпишись -->
 
         <form class="subscribe">
-          <label class="subscribe__label" for="email" >підпишіться на розсилку</label>
+          <label class="subscribe__label" for="email"
+            >підпишіться на розсилку</label
+          >
           <div class="subscribe__wrap">
-            <input class="subscribe__input" type="email" name="email" id="email" placeholder="E-mail" />
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
             <button class="subscribe__btn" type="submit">
               Підписатися
               <svg class="subscribe_btn--icon" width="24" height="24">

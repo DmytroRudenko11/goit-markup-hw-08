@@ -113,7 +113,6 @@ button {
 }
 
 .header-page {
-  margin: 0 auto;
   border-bottom: 1px solid #ececec;
   position: relative;
   height: 60px;
@@ -140,7 +139,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .header-page__container {
-    margin: 0;
+    margin: 1px;
   }
 }
 
