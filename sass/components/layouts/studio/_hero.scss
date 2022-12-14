@@ -3,13 +3,6 @@
   flex-direction: column;
   max-width: 480px;
   height: 400px;
-  @include tablet {
-    max-width: 768px;
-  }
-  @include desktop {
-    max-width: 1600px;
-    height: 600px;
-  }
   margin-left: auto;
   margin-right: auto;
 
@@ -18,22 +11,80 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background.jpg);
+    url(../images/background-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+  @include retina {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-mob-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
+  @include tablet {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-tab-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
 
 .hero {
   background-color: $secondary-bgc-color;
 }
 
 .container__hero {
- @include centeredFlex;
+  @include centeredFlex;
   flex-direction: column;
 }
-
 
 .hero__title {
   margin-bottom: 30px;
@@ -46,6 +97,11 @@
 
   @include tablet {
     max-width: 360px;
+  }
+
+  @include desktop {
+    @include font(900, 44px, 1.36, 0.06em);
+    max-width: 700px;
   }
 }
 

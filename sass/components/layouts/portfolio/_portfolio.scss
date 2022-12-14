@@ -58,6 +58,7 @@
 
 .examples__item {
   width: 100%;
+  height: auto;
   @include tablet {
     @include calc(2, 30px);
   }
@@ -69,6 +70,7 @@
 .examples__link {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   transition: box-shadow $trans-standart;
 
@@ -100,6 +102,7 @@
 }
 
 .examples__card {
+  flex-grow: 1;
   padding: 20px 25px;
 
   border: 1px solid #eeeeee;
