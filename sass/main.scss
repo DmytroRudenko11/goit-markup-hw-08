@@ -1,0 +1,25 @@
+// Utils
+
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/default";
+
+// components
+
+@import "./components/base";
+@import "./components/logo";
+
+@import "./components/layouts/header";
+@import "./components/layouts/footer";
+
+// sections
+
+@import "./components/layouts/studio/hero";
+@import "./components/layouts/studio/advantages";
+@import "./components/layouts/studio/job";
+@import "./components/layouts/studio/team";
+@import "./components/layouts/studio/clients";
+
+@import "./components/layouts/studio/modal"
+
+

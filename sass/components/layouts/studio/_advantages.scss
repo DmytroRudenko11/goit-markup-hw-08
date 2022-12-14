@@ -1,0 +1,39 @@
+.advantage__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.advantage__item {
+  @include tablet {
+    @include calc(2, 30px);
+  }
+  @include desktop {
+    @include calc(4, 30px);
+  }
+}
+
+.advantage__thumb {
+  @include centeredFlex;
+  height: 120px;
+  margin-bottom: 30px;
+  width: 100%;
+
+  background-color: $backgroung-color;
+}
+
+.advantage__subtitle {
+  @include font(null, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-title-color;
+
+  margin-bottom: 10px;
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.advantage__text {
+  @include font(null, 14px, 1.71, 0.03em);
+}

@@ -1,0 +1,49 @@
+.clients {
+  margin: 0 auto;
+}
+.clients__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  @include centeredFlex;
+
+  @include calc (2, 30px);
+  height: 92px;
+  
+  @include tablet {
+    @include calc (3, 30px);
+  }
+
+  @include desktop {
+    @include calc (6, 30px);
+  }
+}
+
+.clients__link {
+  @include centeredFlex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+
+  transition: border $trans-standart;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: #afb1b8;
+  transition: fill $trans-standart;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}

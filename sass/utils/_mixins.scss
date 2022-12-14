@@ -1,0 +1,52 @@
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin mobileButton {
+  min-width: 150px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+@mixin calc($count, $gap) {
+  width: calc((100% - ($count - 1) * $gap) / $count);
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px ) {
+    @content;
+  }
+}
