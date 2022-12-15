@@ -145,12 +145,17 @@
   background-color: #fff;
   z-index: 1;
 
-  overflow: auto;
+ 
   @include tablet {
     display: none;
   }
   > .container {
     padding: 48px 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
   }
 }
 

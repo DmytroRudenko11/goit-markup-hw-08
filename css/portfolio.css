@@ -271,7 +271,6 @@ button {
   height: 100vh;
   background-color: #fff;
   z-index: 1;
-  overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .mob__menu {
@@ -280,6 +279,11 @@ button {
 }
 .mob__menu > .container {
   padding: 48px 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .mob-wrap {
