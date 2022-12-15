@@ -81,7 +81,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;;
   gap: 10px;
 
   margin-left: auto;
@@ -147,10 +147,10 @@
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 48px;
+
   @include tablet {
     display: none;
   }
-  overflow: scroll;
 }
 
 .mob-wrap {
@@ -195,9 +195,6 @@
   .mob__btn-close:focus & {
     fill: $accent-color;
   }
-}
-.mob-navigation {
-  margin-bottom: 50px;
 }
 
 .mob-navigation__list {

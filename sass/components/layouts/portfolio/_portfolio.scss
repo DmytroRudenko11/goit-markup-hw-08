@@ -1,15 +1,5 @@
 // filter
 
-.portfolio {
-  background-color: $white-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @include desktop {
-    padding-top: 95px;
-    padding-bottom: 95px;
-  }
-}
-
 .filter {
   display: flex;
   flex-wrap: wrap;

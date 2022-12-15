@@ -199,7 +199,7 @@ button {
 .contacts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;
   gap: 10px;
   margin-left: auto;
 }
@@ -274,7 +274,6 @@ button {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 48px;
-  overflow: scroll;
 }
 @media screen and (min-width: 768px) {
   .mob__menu {
@@ -323,10 +322,6 @@ button {
 .mob__btn-close:hover .burger__icon,
 .mob__btn-close:focus .burger__icon {
   fill: #2196f3;
-}
-
-.mob-navigation {
-  margin-bottom: 50px;
 }
 
 .mob-navigation__list {
@@ -399,19 +394,11 @@ button {
 }
 
 .footer {
-  margin: 0 auto;
   background-color: #2f303a;
   text-align: center;
-  padding: 60px 15px;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 60px 0;
     text-align: left;
   }
 }
@@ -610,18 +597,6 @@ button {
   }
   .subscribe__btn:hover, .subscribe__btn:focus {
     background-color: #188ce8;
-  }
-}
-
-.portfolio {
-  background-color: #ffffff;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    padding-top: 95px;
-    padding-bottom: 95px;
   }
 }
 

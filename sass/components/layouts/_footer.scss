@@ -1,15 +1,8 @@
 .footer {
-  margin: 0 auto;
   background-color: $secondary-bgc-color;
   text-align: center;
-  padding: 60px 15px;
-
-  @include tablet {
-    padding: 60px;
-  }
 
   @include desktop {
-    padding: 60px 0;
     text-align: left;
   }
 }
