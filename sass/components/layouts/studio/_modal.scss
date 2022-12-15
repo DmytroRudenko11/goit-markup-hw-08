@@ -40,7 +40,8 @@
   overflow: scroll;
 
   @include tablet {
-    height: 609px;
+    height: 60%;
+    width: 60%;
   }
 
   @include desktop {
